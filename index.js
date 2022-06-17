@@ -5,7 +5,7 @@ const fs = require('fs')
 dotenv.config()
 
 const bot = new SlackBot({
-  token: `xoxb-2577572378292-2578976654514-mUmWIAsmuhOKbmq9Du4iV7dw`,
+  token: `${process.env.BOT_TOKEN}`,
   name: 'bot-slack'
 })
 
@@ -14,7 +14,7 @@ bot.on('start', async () => {
     username: 'bot-name'
   }
   bot.postMessageToChannel(
-    `message-test`,
+    `${process.env.SLACK_CHANNEL}`,
     `Teste`,
     config
   );
