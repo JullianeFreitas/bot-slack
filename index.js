@@ -10,7 +10,7 @@ const bot = new SlackBot({
 })
 
 bot.on('start', async () => {
-
+  console.log(`token ${process.env.BOT_TOKEN}`)
   const config = {
     username: 'bot-name'
   }
