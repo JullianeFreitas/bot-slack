@@ -3,6 +3,10 @@
 
 name: Node.js CI
 
+env:
+    BOT_TOKEN: ${{ secrets.BOT_TOKEN }}
+    SLACK_CHANNEL: ${{ secrets.SLACK_CHANNEL }}
+
 on: workflow_dispatch
 
 jobs:
