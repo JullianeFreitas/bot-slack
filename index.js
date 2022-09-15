@@ -26,7 +26,7 @@ bot.on('start', async () => {
 })
 
 process.on('exit', function (code) {
-  return console.log(`${new Date()} [INFO] About to exit with code: ${code}`);
+  return console.log(`${new Date()} [INFO] About to exit with code ${code}`);
 });
 
 
